@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 228, 196, 0.651);
+}
+
+main{
+    max-width: 1600px;
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    text-align: center;
+    padding: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9em;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 0px;
+}
+
+table.t1{
+    margin-left: 100px;
+    width: 200px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.144);
+}
+
+table.t1 thead{
+    background-color: lightcyan;
+}
+
+table.t1 th{
+    padding: 5px;
+}
+
+table.t1 input{
+    border: 0px;
+    height: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+table.t1 td#isoma{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+table.t1 button{
+    border: 0px;
+    width: 100%;
+    padding: 6.5px;
+    color: white;
+    background-color: black;
+    font-size: 0.9em;
+}
+
+table.t1 button:hover{
+    color: black;
+    font-weight: bold;
+    background-color: lightcyan;
+}
+
+table.t1 > tfoot > tr > th{
+    padding: 0px;
+}
+
+fieldset{
+    padding: 5px;
+    margin-top: 20px;
+    width: 300px;
+    margin-left: 100px;
+}
+
+table.t2{
+    margin: auto;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.144);
+}
+
+table.t2 input{
+    border: 0px;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+}

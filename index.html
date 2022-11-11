@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="tabela.js"></script>
+    <title>Minha Primeira Tabela</title>
+</head>
+<body>
+    <main>
+        <h1>Métricas</h1>
+            <table class="t1">
+                <thead>
+                    <th scope="colgroup" colspan="2">Tabelas</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><label for="ita">Tabela A =</label></th>
+                        <td><input type="number" name="ta" id="ita"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="itb">Tabela B =</label></th>
+                        <td><input type="number" name="tb" id="itb"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="itc">Tabela C =</label></th>
+                        <td><input type="number" name="tc" id="itc"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="itd">Tabela D =</label></th>
+                        <td><input type="number" name="td" id="itd"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="ite">Tabela E =</label></th>
+                        <td><input type="number" name="te" id="ite"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="itf">Tabela F =</label></th>
+                        <td><input type="number" name="tf" id="itf"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row"><button type="button" onclick="somar()"><label for="isoma">Somar</label></button></th>
+                        <td name="soma" id="isoma"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Tipo de Linguagem</legend>
+                    <input type="radio" name="linguagem" id="icobol" value="1"> <label for="icobol">Cobol</label> <br>
+                    <input type="radio" name="linguagem" id="ipascal"> <label for="ipascal">Pascal</label> <br>
+                    <input type="radio" name="linguagem" id="ijdv"> <label for="ijdv">Java / Delphi / Visual Basic</label> <br>
+                    <input type="radio" name="linguagem" id="iobj"> <label for="iobj">Linguagem Orientada a Obj. (C++)</label> <br>
+                    <input type="radio" name="linguagem" id="igerCod"> <label for="igerCod">Geradores de Código (SQL + HTML)</label>
+                    <button type="button" onclick="linguagem()">Enviar</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Tipo de Sistema</legend>
+                    <input type="radio" name="sistema" id="iweb"> <label for="iweb">Sistema Web</label> <br>
+                    <input type="radio" name="sistema" id="icom"> <label for="icom">Sistema Comercial</label> <br>
+                    <input type="radio" name="sistema" id="iele"> <label for="iele">Sistema Eletrônico</label>
+                </fieldset>
+                <fieldset>
+                    <label for="ihora">Valor da hora:</label>
+                    <input type="number" name="hora" id="ihora">
+                </fieldset>
+            </form>
+            <table class="t2">
+                <tr>
+                    <td class="dados"><input type="number"></td>
+                    <td class="dados"><input type="number"></td>
+                    <td class="dados"><input type="number"></td>
+                </tr>
+                <tr>
+                    <td class="dados"><input type="number"></td>
+                    <td class="dados"><input type="number"></td>
+                    <td class="dados"><input type="number"></td>
+                </tr>
+                <tr>
+                    <td class="dados"><input type="number"></td>
+                    <td class="dados"><input type="number"></td>
+                    <td class="dados"><input type="number"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Enviar">
+    </main>
+</body>
+</html>
