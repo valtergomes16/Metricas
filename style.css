@@ -17,6 +17,7 @@ main{
     margin: auto;
     padding: 10px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding-bottom: 100%;
 }
 
 h1{
@@ -65,15 +66,25 @@ table.t1 button{
     border: 0px;
     width: 100%;
     padding: 6.5px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: lightcyan;
     font-size: 0.9em;
 }
 
+table.t1 tfoot td, table.t1 tfoot th{
+    box-sizing: border-box;
+}
+
 table.t1 button:hover{
-    color: black;
+    color: white;
     font-weight: bold;
-    background-color: lightcyan;
+    background-color: black;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+table.t1 label:hover{
+    cursor: pointer;
 }
 
 table.t1 > tfoot > tr > th{
@@ -88,7 +99,8 @@ fieldset{
 }
 
 table.t2{
-    margin: auto;
+    margin-top: 20px;
+    margin-left: 100px;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.144);
 }
 

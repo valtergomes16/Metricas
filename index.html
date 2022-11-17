@@ -51,22 +51,23 @@
             <form action="" method="post">
                 <fieldset>
                     <legend>Tipo de Linguagem</legend>
-                    <input type="radio" name="linguagem" id="icobol" value="1"> <label for="icobol">Cobol</label> <br>
-                    <input type="radio" name="linguagem" id="ipascal"> <label for="ipascal">Pascal</label> <br>
-                    <input type="radio" name="linguagem" id="ijdv"> <label for="ijdv">Java / Delphi / Visual Basic</label> <br>
-                    <input type="radio" name="linguagem" id="iobj"> <label for="iobj">Linguagem Orientada a Obj. (C++)</label> <br>
-                    <input type="radio" name="linguagem" id="igerCod"> <label for="igerCod">Geradores de Código (SQL + HTML)</label>
-                    <button type="button" onclick="linguagem()">Enviar</button>
+                    <input type="radio" name="linguagemTipo" id="icobol" value="1"> <label for="icobol">Cobol</label> <br>
+                    <input type="radio" name="linguagemTipo" id="ipascal" value="2"> <label for="ipascal">Pascal</label> <br>
+                    <input type="radio" name="linguagemTipo" id="ijdv" value="3"> <label for="ijdv">Java / Delphi / Visual Basic</label> <br>
+                    <input type="radio" name="linguagemTipo" id="iobj" value="4"> <label for="iobj">Linguagem Orientada a Obj. (C++)</label> <br>
+                    <input type="radio" name="linguagemTipo" id="igerCod" value="5"> <label for="igerCod">Geradores de Código (SQL + HTML)</label>
+                    <button type="button" onclick="linguagemChoice()">Enviar</button>
                 </fieldset>
                 <fieldset>
                     <legend>Tipo de Sistema</legend>
-                    <input type="radio" name="sistema" id="iweb"> <label for="iweb">Sistema Web</label> <br>
-                    <input type="radio" name="sistema" id="icom"> <label for="icom">Sistema Comercial</label> <br>
-                    <input type="radio" name="sistema" id="iele"> <label for="iele">Sistema Eletrônico</label>
+                    <input type="radio" name="sistemaTipo" id="iweb"> <label for="iweb">Sistema Web</label> <br>
+                    <input type="radio" name="sistemaTipo" id="icom"> <label for="icom">Sistema Comercial</label> <br>
+                    <input type="radio" name="sistemaTipo" id="iele"> <label for="iele">Sistema Eletrônico</label>
                 </fieldset>
                 <fieldset>
                     <label for="ihora">Valor da hora:</label>
                     <input type="number" name="hora" id="ihora">
+                    <p id="lpValorDEF">Valor da linguagem aparece aqui</p>
                 </fieldset>
             </form>
             <table class="t2">

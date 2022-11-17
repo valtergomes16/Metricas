@@ -10,14 +10,25 @@ function somar(){
     document.getElementById("isoma").innerHTML = soma
 }
 
-function linguagem(){
-    let cobol = document.getElementById("icobol").value
-    let cobol1
-    let linguagem = document.getElementsByName("linguagem")
-
-    if(cobol==1){
-        cobol1 = 100
+function linguagemChoice(){
+    //let tipoLinguagem = document.getElementsByName("linguagemTipo")
+    let valorLinguagem = 0
+    let tipoLinguagem = document.querySelector("[name='linguagemTipo']:checked").value
+    console.log(tipoLinguagem)
+    if(tipoLinguagem == 1) {
+        valorLinguagem = 100
     }
-
-    console.log(cobol1)
+    else if(tipoLinguagem == 2) {
+        valorLinguagem = 200
+    }
+    else if(tipoLinguagem == 3) {
+        valorLinguagem = 300
+    }
+    else if(tipoLinguagem == 4) {
+        valorLinguagem = 400
+    }
+    else{
+        valorLinguagem = 500
+    }
+    document.getElementById("lpValorDEF").innerHTML = valorLinguagem
 }
