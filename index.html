@@ -57,17 +57,21 @@
                     <input type="radio" name="linguagemTipo" id="iobj" value="4"> <label for="iobj">Linguagem Orientada a Obj. (C++)</label> <br>
                     <input type="radio" name="linguagemTipo" id="igerCod" value="5"> <label for="igerCod">Geradores de Código (SQL + HTML)</label>
                     <button type="button" onclick="linguagemChoice()">Enviar</button>
+                    <p id="lpValorDEF1">Valor da linguagem aparece aqui</p>
                 </fieldset>
                 <fieldset>
                     <legend>Tipo de Sistema</legend>
-                    <input type="radio" name="sistemaTipo" id="iweb"> <label for="iweb">Sistema Web</label> <br>
-                    <input type="radio" name="sistemaTipo" id="icom"> <label for="icom">Sistema Comercial</label> <br>
-                    <input type="radio" name="sistemaTipo" id="iele"> <label for="iele">Sistema Eletrônico</label>
+                    <input type="radio" name="sistemaTipo" id="iweb" value="1"> <label for="iweb">Sistema Web</label> <br>
+                    <input type="radio" name="sistemaTipo" id="icom" value="2"> <label for="icom">Sistema Comercial</label> <br>
+                    <input type="radio" name="sistemaTipo" id="iele" value="3"> <label for="iele">Sistema Eletrônico</label> <br>
+                    <button type="button" onclick="sistemaChoice()">Enviar</button>
+                    <p id="lpValorDEF2">Valor do sistema aparece aqui</p>
                 </fieldset>
                 <fieldset>
                     <label for="ihora">Valor da hora:</label>
                     <input type="number" name="hora" id="ihora">
-                    <p id="lpValorDEF">Valor da linguagem aparece aqui</p>
+                    <button type="button" onclick="valorHora()">Enviar</button>
+                    <p id="lpValorDEF3">Valor da hora aparece aqui</p>
                 </fieldset>
             </form>
             <table class="t2">
@@ -87,7 +91,6 @@
                     <td class="dados"><input type="number"></td>
                 </tr>
             </table>
-            <input type="submit" value="Enviar">
     </main>
 </body>
 </html>

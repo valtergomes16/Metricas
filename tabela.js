@@ -30,5 +30,26 @@ function linguagemChoice(){
     else{
         valorLinguagem = 500
     }
-    document.getElementById("lpValorDEF").innerHTML = valorLinguagem
+    document.getElementById("lpValorDEF1").innerHTML = valorLinguagem
+}
+
+function sistemaChoice(){
+    let tipoSistema = document.querySelector("[name='sistemaTipo']:checked").value
+    let valorSistema = 0
+    console.log(tipoSistema)
+    if(tipoSistema == 1) {
+        valorSistema = 3300
+    }
+    else if(tipoSistema == 2) {
+        valorSistema = 2500
+    }
+    else{
+        valorSistema = 3600
+    }
+    document.getElementById("lpValorDEF2").innerHTML = valorSistema
+}
+
+function valorHora(){
+    let valorHora = Number(document.getElementById("ihora").value)
+    document.getElementById('lpValorDEF3').innerHTML = valorHora
 }
