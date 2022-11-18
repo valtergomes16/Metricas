@@ -67,6 +67,7 @@ table.t1 button{
     color: black;
     background-color: lightcyan;
     font-size: 0.9em;
+    margin: 0px;
 }
 
 table.t1 tfoot td, table.t1 tfoot th{
@@ -107,4 +108,10 @@ table.t2 input{
     height: 25px;
     width: 150px;
     text-align: center;
+}
+
+button{
+    padding: 1px;
+    width: 54px;
+    margin: 5px;
 }
