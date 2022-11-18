@@ -11,8 +11,7 @@ body{
 }
 
 main{
-    min-width: 300px;
-    max-width: 1600px;
+    width: 1600px;
     background-color: white;
     margin: auto;
     padding: 20px;
