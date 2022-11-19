@@ -25,6 +25,13 @@ h1{
     font-size: 1.9em;
 }
 
+fieldset{
+    padding: 5px;
+    margin-top: 20px;
+    width: 300px;
+    margin-left: 100px;
+}
+
 table{
     border-collapse: collapse;
 }
@@ -41,7 +48,7 @@ table.t1{
 }
 
 table.t1 thead{
-    background-color: lightcyan;
+    background-color: lightgray;
 }
 
 table.t1 th{
@@ -65,7 +72,7 @@ table.t1 button{
     width: 100%;
     padding: 6.5px;
     color: black;
-    background-color: lightcyan;
+    background-color: lightgray;
     font-size: 0.9em;
     margin: 0px;
 }
@@ -90,24 +97,23 @@ table.t1 > tfoot > tr > th{
     padding: 0px;
 }
 
-fieldset{
-    padding: 5px;
-    margin-top: 20px;
-    width: 300px;
-    margin-left: 100px;
-}
-
 table.t2{
-    margin-top: 200px;
+    margin-top: 20px;
     margin-left: 100px;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.144);
 }
 
-table.t2 input{
-    border: 0px;
-    height: 25px;
-    width: 150px;
+table.t2 td{
+    width: 80px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    font-size: 0.9em;
+}
+
+table.t2 th{
+    width: 80px;
+    padding: 3px;
+    background-color: lightgrey;
 }
 
 button{
