@@ -37,6 +37,8 @@ function linguagemChoice(){
         valorLinguagem = 15
     }
     document.getElementById("lpValorDEF1").innerHTML = valorLinguagem
+
+    peso(valorLinguagem)
 }
 
 function sistemaChoice(){
@@ -778,13 +780,20 @@ function interface(){
     return pesoInterface
 }
 
-function peso(){
+function peso(valorLinguagem){
     let fpb = entrada() + saida() + consulta() + arquivo() + interface()
     console.log(`FP'B = ${fpb}`)
-    fpr(fpb)
+    calculaFpr(fpb, valorLinguagem)
 }
 
-function fpr(fpb){
+function calculaFpr(fpb, valorLinguagem){
     let fpr = fpb * 1.35
-    console.log(`FP'R = ${fpr.toFixed(2)}`)
+    console.log(`FP'R = ${Math.round(fpr)}`)
+    calculaLoc(fpr, valorLinguagem)
+}
+
+function calculaLoc(fpr, valorLinguagem){
+    let loc = Math.round(fpr) * valorLinguagem
+    document.getElementById(`iloc`).innerHTML = loc
+    console.log(`Loc = ${loc}`)
 }
