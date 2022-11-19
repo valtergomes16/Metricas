@@ -13,6 +13,7 @@ function somar(){
     consulta()
     arquivo()
     interface()
+    peso()
 }
 
 function linguagemChoice(){
@@ -190,6 +191,10 @@ function entrada(){
     document.getElementById(`entradaPesoSimples`).innerHTML = pesoSimples
     document.getElementById(`entradaPesoMedio`).innerHTML = pesoMedio
     document.getElementById(`entradaPesoComplexo`).innerHTML = pesoComplexo
+
+    let pesoEntrada = pesoComplexo + pesoMedio + pesoSimples
+
+    return pesoEntrada
 }
 
 function saida(){
@@ -334,6 +339,10 @@ function saida(){
     document.getElementById(`saidaPesoSimples`).innerHTML = pesoSimples
     document.getElementById(`saidaPesoMedio`).innerHTML = pesoMedio
     document.getElementById(`saidaPesoComplexo`).innerHTML = pesoComplexo
+    
+    let pesoSaida = pesoComplexo + pesoMedio + pesoSimples
+
+    return pesoSaida
 }
 
 function consulta(){
@@ -478,6 +487,10 @@ function consulta(){
     document.getElementById(`consultaPesoSimples`).innerHTML = pesoSimples
     document.getElementById(`consultaPesoMedio`).innerHTML = pesoMedio
     document.getElementById(`consultaPesoComplexo`).innerHTML = pesoComplexo
+
+    let pesoConsulta = pesoComplexo + pesoMedio + pesoSimples
+
+    return pesoConsulta
 }
 
 function arquivo(){
@@ -611,6 +624,10 @@ function arquivo(){
     document.getElementById(`arquivoPesoSimples`).innerHTML = pesoSimples
     document.getElementById(`arquivoPesoMedio`).innerHTML = pesoMedio
     document.getElementById(`arquivoPesoComplexo`).innerHTML = pesoComplexo
+
+    let pesoArquivo = pesoComplexo + pesoMedio + pesoSimples
+
+    return pesoArquivo
 }
 
 function interface(){
@@ -755,4 +772,19 @@ function interface(){
     document.getElementById(`interfacePesoSimples`).innerHTML = pesoSimples
     document.getElementById(`interfacePesoMedio`).innerHTML = pesoMedio
     document.getElementById(`interfacePesoComplexo`).innerHTML = pesoComplexo
+
+    let pesoInterface = pesoComplexo + pesoMedio + pesoSimples
+
+    return pesoInterface
+}
+
+function peso(){
+    let fpb = entrada() + saida() + consulta() + arquivo() + interface()
+    console.log(`FP'B = ${fpb}`)
+    fpr(fpb)
+}
+
+function fpr(fpb){
+    let fpr = fpb * 1.35
+    console.log(`FP'R = ${fpr.toFixed(2)}`)
 }
