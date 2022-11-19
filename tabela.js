@@ -24,16 +24,16 @@ function linguagemChoice(){
         valorLinguagem = 100
     }
     else if(tipoLinguagem == 2) {
-        valorLinguagem = 200
+        valorLinguagem = 90
     }
     else if(tipoLinguagem == 3) {
-        valorLinguagem = 300
+        valorLinguagem = 20
     }
     else if(tipoLinguagem == 4) {
-        valorLinguagem = 400
+        valorLinguagem = 30
     }
     else{
-        valorLinguagem = 500
+        valorLinguagem = 15
     }
     document.getElementById("lpValorDEF1").innerHTML = valorLinguagem
 }
@@ -182,6 +182,14 @@ function entrada(){
     document.getElementById(`entradaSimples`).innerHTML = simples
     document.getElementById(`entradaMedio`).innerHTML = medio
     document.getElementById(`entradaComplexo`).innerHTML = complexo
+
+    let pesoSimples = simples * 3
+    let pesoMedio = medio * 4
+    let pesoComplexo = complexo * 6
+
+    document.getElementById(`entradaPesoSimples`).innerHTML = pesoSimples
+    document.getElementById(`entradaPesoMedio`).innerHTML = pesoMedio
+    document.getElementById(`entradaPesoComplexo`).innerHTML = pesoComplexo
 }
 
 function saida(){
@@ -318,6 +326,14 @@ function saida(){
     document.getElementById(`saidaSimples`).innerHTML = simples
     document.getElementById(`saidaMedio`).innerHTML = medio
     document.getElementById(`saidaComplexo`).innerHTML = complexo
+    
+    let pesoSimples = simples * 4
+    let pesoMedio = medio * 5
+    let pesoComplexo = complexo * 7
+
+    document.getElementById(`saidaPesoSimples`).innerHTML = pesoSimples
+    document.getElementById(`saidaPesoMedio`).innerHTML = pesoMedio
+    document.getElementById(`saidaPesoComplexo`).innerHTML = pesoComplexo
 }
 
 function consulta(){
@@ -454,6 +470,14 @@ function consulta(){
     document.getElementById(`consultaSimples`).innerHTML = simples
     document.getElementById(`consultaMedio`).innerHTML = medio
     document.getElementById(`consultaComplexo`).innerHTML = complexo
+
+    let pesoSimples = simples * 3
+    let pesoMedio = medio * 4
+    let pesoComplexo = complexo * 6
+
+    document.getElementById(`consultaPesoSimples`).innerHTML = pesoSimples
+    document.getElementById(`consultaPesoMedio`).innerHTML = pesoMedio
+    document.getElementById(`consultaPesoComplexo`).innerHTML = pesoComplexo
 }
 
 function arquivo(){
@@ -579,6 +603,14 @@ function arquivo(){
     document.getElementById(`arquivoSimples`).innerHTML = simples
     document.getElementById(`arquivoMedio`).innerHTML = medio
     document.getElementById(`arquivoComplexo`).innerHTML = complexo
+
+    let pesoSimples = simples * 7
+    let pesoMedio = medio * 10
+    let pesoComplexo = complexo * 15
+
+    document.getElementById(`arquivoPesoSimples`).innerHTML = pesoSimples
+    document.getElementById(`arquivoPesoMedio`).innerHTML = pesoMedio
+    document.getElementById(`arquivoPesoComplexo`).innerHTML = pesoComplexo
 }
 
 function interface(){
@@ -715,4 +747,12 @@ function interface(){
     document.getElementById(`interfaceSimples`).innerHTML = simples
     document.getElementById(`interfaceMedio`).innerHTML = medio
     document.getElementById(`interfaceComplexo`).innerHTML = complexo
+
+    let pesoSimples = simples * 5
+    let pesoMedio = medio * 7
+    let pesoComplexo = complexo * 10
+
+    document.getElementById(`interfacePesoSimples`).innerHTML = pesoSimples
+    document.getElementById(`interfacePesoMedio`).innerHTML = pesoMedio
+    document.getElementById(`interfacePesoComplexo`).innerHTML = pesoComplexo
 }
