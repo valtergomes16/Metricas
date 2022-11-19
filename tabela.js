@@ -36,7 +36,7 @@ function linguagemChoice(){
     else{
         valorLinguagem = 15
     }
-    document.getElementById("lpValorDEF1").innerHTML = valorLinguagem
+    document.getElementById("lpValorDEF1").innerHTML = `Valor da lingagem = ${valorLinguagem}`
 
     peso(valorLinguagem)
 }
@@ -54,12 +54,14 @@ function sistemaChoice(){
     else{
         valorSistema = 3600
     }
-    document.getElementById("lpValorDEF2").innerHTML = valorSistema
+    document.getElementById("lpValorDEF2").innerHTML = `Valor do sistema = ${valorSistema}`
+    
+    return valorSistema
 }
 
 function valorHora(){
     let valorHora = Number(document.getElementById("ihora").value)
-    document.getElementById('lpValorDEF3').innerHTML = valorHora
+    document.getElementById('lpValorDEF3').innerHTML = `Valor da hora = ${valorHora}`
 }
 
 function entrada(){
@@ -794,6 +796,13 @@ function calculaFpr(fpb, valorLinguagem){
 
 function calculaLoc(fpr, valorLinguagem){
     let loc = Math.round(fpr) * valorLinguagem
-    document.getElementById(`iloc`).innerHTML = loc
+    document.getElementById(`iloc`).innerHTML = `Valor do Loc = ${loc}`
     console.log(`Loc = ${loc}`)
+
+    calculaIndicador(loc)
+}
+
+function calculaIndicador(loc){
+    let indicador = Number(loc / sistemaChoice())
+    document.getElementById(`iindicador`).innerHTML = `Valor do Indicador = ${indicador}`
 }

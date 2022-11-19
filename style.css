@@ -125,3 +125,15 @@ button{
 div{
     display: inline;
 }
+
+button#gerarLoc{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 80px;
+}
+
+button#gerarIndicador{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 100px;
+}
