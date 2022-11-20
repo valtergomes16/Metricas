@@ -799,10 +799,10 @@ function calculaLoc(fpr, valorLinguagem){
     document.getElementById(`iloc`).innerHTML = `Valor do Loc = ${loc}`
     console.log(`Loc = ${loc}`)
 
-    calculaIndicador(loc)
+    return loc
 }
 
-function calculaIndicador(loc){
-    let indicador = Number(loc / sistemaChoice())
+function calculaIndicador(){
+    let indicador = Number(calculaLoc() / sistemaChoice())
     document.getElementById(`iindicador`).innerHTML = `Valor do Indicador = ${indicador}`
 }
