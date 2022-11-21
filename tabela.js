@@ -806,4 +806,15 @@ function calculaKloc(){
 function calculaIndicador(){
     let indicador = parseInt(calculaKloc() / sistemaChoice() * 100)
     document.getElementById(`iindicador`).innerHTML = `Valor do Indicador = ${indicador/100}`
+    return indicador/100
+}
+
+function calculaPrazo(){
+    let dias = calculaIndicador() * 22
+    let horas = (dias - parseInt(dias)) / 100 * 6
+    let minutos = (horas - parseInt(horas)) / 100 * 60
+
+    document.getElementById(`idias`).innerHTML = parseInt(dias)
+    document.getElementById(`ihoras`).innerHTML = parseInt(horas)
+    document.getElementById(`iminutos`).innerHTML = parseInt(minutos)
 }
