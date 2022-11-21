@@ -804,6 +804,6 @@ function calculaKloc(){
 }
 
 function calculaIndicador(){
-    let indicador = Number(calculaKloc() / sistemaChoice())
-    document.getElementById(`iindicador`).innerHTML = `Valor do Indicador = ${indicador.toFixed(2)}`
+    let indicador = parseInt(calculaKloc() / sistemaChoice() * 100)
+    document.getElementById(`iindicador`).innerHTML = `Valor do Indicador = ${indicador/100}`
 }
