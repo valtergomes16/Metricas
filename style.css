@@ -164,7 +164,12 @@ table.t3 th{
     background-color: lightgrey;
 }
 
-button#iprazo{
+button#iprazo, button#botaoTotal{
     margin-left: 100px;
     margin-top: 20px;
+    width: 100px;
+}
+
+p#itotal{
+    display: inline;
 }

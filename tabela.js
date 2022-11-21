@@ -62,6 +62,7 @@ function sistemaChoice(){
 function valorHora(){
     let valorHora = Number(document.getElementById("ihora").value)
     document.getElementById('lpValorDEF3').innerHTML = `Valor da hora = ${valorHora}`
+    return valorHora
 }
 
 function entrada(){
@@ -817,4 +818,10 @@ function calculaPrazo(){
     document.getElementById(`idias`).innerHTML = parseInt(dias)
     document.getElementById(`ihoras`).innerHTML = parseInt(horas)
     document.getElementById(`iminutos`).innerHTML = parseInt(minutos)
+}
+
+function valorTotalProjeto(){
+    let total = 132 * valorHora() * calculaIndicador()
+
+    document.getElementById(`itotal`).innerHTML = total.toFixed(2)
 }
