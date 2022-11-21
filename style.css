@@ -23,6 +23,7 @@ h1{
     padding: 20px 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.9em;
+    text-shadow: 2px 2px 10px rgba(22, 22, 22, 0.13);
 }
 
 fieldset{
