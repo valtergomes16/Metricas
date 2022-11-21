@@ -163,3 +163,8 @@ table.t3 th{
     padding: 3px;
     background-color: lightgrey;
 }
+
+button#iprazo{
+    margin-left: 100px;
+    margin-top: 20px;
+}
