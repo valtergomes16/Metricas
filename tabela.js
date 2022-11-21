@@ -794,7 +794,7 @@ function calculaFpr(){
     let fpr = peso() * 1.35
     console.log(`FP'R = ${Math.round(fpr)}`)
     document.getElementById(`ifpr`).innerHTML = `Valor do F'PR = ${Math.round(fpr)}`
-    return fpr
+    return Math.round(fpr)
 }
 
 function calculaKloc(){
