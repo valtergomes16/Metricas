@@ -36,7 +36,7 @@ function linguagemChoice(){
     else{
         valorLinguagem = 15
     }
-    document.getElementById("lpValorDEF1").innerHTML = `Valor da lingagem = ${valorLinguagem}`
+    document.getElementById("lpValorDEF1").innerHTML = `Valor da linguagem = ${valorLinguagem}`
 
     return valorLinguagem
 }
@@ -785,23 +785,25 @@ function interface(){
 function peso(){
     let fpb = entrada() + saida() + consulta() + arquivo() + interface()
     console.log(`FP'B = ${fpb}`)
+    document.getElementById(`ifpb`).innerHTML = `Valor do F'PB = ${fpb}`
     return fpb
 }
 
 function calculaFpr(){
     let fpr = peso() * 1.35
     console.log(`FP'R = ${Math.round(fpr)}`)
+    document.getElementById(`ifpr`).innerHTML = `Valor do F'PR = ${Math.round(fpr)}`
     return fpr
 }
 
 function calculaKloc(){
     let kloc = Number(calculaFpr() * linguagemChoice())
-    document.getElementById(`iloc`).innerHTML = `Valor do kLoc = ${kloc}`
-    console.log(`Loc = ${kloc}`)
+    document.getElementById(`ikloc`).innerHTML = `Valor do kLoc = ${kloc.toFixed(2)}`
+    console.log(`Kloc = ${kloc.toFixed(2)}`)
     return kloc
 }
 
 function calculaIndicador(){
     let indicador = Number(calculaKloc() / sistemaChoice())
-    document.getElementById(`iindicador`).innerHTML = `Valor do Indicador = ${indicador}`
+    document.getElementById(`iindicador`).innerHTML = `Valor do Indicador = ${indicador.toFixed(2)}`
 }
